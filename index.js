@@ -1,6 +1,9 @@
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { readFile } from "fs/promises";
+import Ajv from "ajv";
+
+const ajvValidator = new Ajv();
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
